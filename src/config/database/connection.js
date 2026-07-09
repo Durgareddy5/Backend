@@ -33,7 +33,7 @@ const connectDB = async () => {
       .catch((error) => {
         logger.error('MongoDB connection error:', error);
         connectionPromise = null; // allow the next request to retry
-        throw error;
+        throw error; // propagate failure to the caller instead of swallowing it
       });
   }
 
