@@ -41,7 +41,6 @@ app.disable("x-powered-by");
 app.use(requestIdMiddleware);
 
 // Security configuration (Helmet, CORS, Limiter)
-app.options('*', cors(corsOptions));
 app.use(securityMiddlewares);
 
 // Compression
