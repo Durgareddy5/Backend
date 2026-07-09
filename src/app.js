@@ -41,6 +41,15 @@ app.disable("x-powered-by");
 // Request ID assignment
 app.use(requestIdMiddleware);
 
+app.use(async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (err) {
+    next(err); // falls through to errorHandlerMiddleware
+  }
+});
+
 // Security configuration (Helmet, CORS, Limiter handled inside securityMiddlewares)
 app.use(securityMiddlewares);
 
