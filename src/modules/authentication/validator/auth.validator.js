@@ -1,6 +1,7 @@
 const { body } = require('express-validator');
 const validationMiddleware = require('../../../common/middlewares/validation.middleware');
 const User = require('../../../models/User');
+const { connectDB } = require('../../../config/database/connection'); // ← ADDED
 
 const registerValidator = [
   body('firstName')
@@ -22,6 +23,7 @@ const registerValidator = [
     .isEmail()
     .withMessage('Please provide a valid email address')
     .custom(async (email) => {
+      await connectDB(); // ← ADDED
       const existingUser = await User.findOne({ email: email.toLowerCase(), status: { $ne: 'pending' }, isDeleted: { $ne: true } });
       if (existingUser) {
         throw new Error('Email is already registered');
@@ -63,7 +65,7 @@ const registerValidator = [
     .withMessage('Accept privacy must be a boolean')
     .custom(v => {
       if (v !== true && v !== 'true') throw new Error('You must accept the privacy policy');
-      return true;
+        return true;
     }),
 
   // Conditional validations based on researcherType
