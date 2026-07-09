@@ -1,7 +1,9 @@
 const express = require("express");
 const compression = require("compression");
 const cookieParser = require("cookie-parser");
-const cors=require('cors');
+const cors = require('cors');
+const fs = require("fs");
+const path = require("path");
 
 // Import Custom Middlewares
 const requestIdMiddleware = require("./common/middlewares/requestId.middleware");
@@ -28,7 +30,6 @@ const datasetModule = require("./modules/dataset");
 const notificationsModule = require("./modules/notifications");
 
 const collaborationRoutes = require("./modules/collaborations/routes/collaboration.routes");
-
 const identityRoutes = require("./modules/identity/routes/identity.routes");
 const recommendationsModule = require("./modules/recommendations");
 
@@ -40,7 +41,7 @@ app.disable("x-powered-by");
 // Request ID assignment
 app.use(requestIdMiddleware);
 
-// Security configuration (Helmet, CORS, Limiter)
+// Security configuration (Helmet, CORS, Limiter handled inside securityMiddlewares)
 app.use(securityMiddlewares);
 
 // Compression
@@ -51,12 +52,18 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(cookieParser());
 
-// Serve static uploaded files
-const fs = require("fs");
-const path = require("path");
-const uploadsDir = path.join(process.cwd(), "uploads");
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
+// Serve static uploaded files (With serverless write-permission fallback)
+let uploadsDir = path.join(process.cwd(), "uploads");
+try {
+  if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  }
+} catch (error) {
+  // If the directory is read-only (like AWS Lambda /var/task), fall back to the writable /tmp sandbox
+  uploadsDir = path.join("/tmp", "uploads");
+  if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  }
 }
 app.use("/uploads", express.static(uploadsDir));
 
@@ -92,7 +99,7 @@ app.get("/", (req, res) => {
 });
 app.get("/health", (req, res)=>{
   res.send({message:"server running successfully"});
-})
+});
 
 // Capture non-existent routes
 app.use(notFoundMiddleware);
