@@ -14,11 +14,12 @@
  *   - Never uses Date.now(), Math.random(), counter, or static value
  *   - Uses function reference in schema default (not evaluated at schema load time)
  *
- * Implementation uses uuid v4 + timestamp to construct a ULID-compatible ID
- * without requiring an external ulid package (uuid is already installed).
+ * Implementation uses Node.js native crypto + timestamp to construct a ULID-compatible ID
+ * without requiring external package dependencies.
  */
 
-const { v4: uuidv4 } = require('uuid');
+// Replaced require('uuid') with Node's native crypto module to prevent ESM errors
+const crypto = require('crypto');
 
 /**
  * Crockford Base32 alphabet (no I, L, O, U to avoid confusion)
@@ -50,13 +51,12 @@ function generateULID() {
   const now = Date.now();
   const timestampPart = encodeBase32(now, 10);
 
-  // 2. Generate 80 bits (10 bytes) of cryptographic randomness using uuid internals
-  //    We extract random bytes from two uuid v4 calls for simplicity and reliability
-  const uuid1 = uuidv4().replace(/-/g, ''); // 32 hex chars = 128 bits
-  const randomBytes = uuid1.substring(0, 20); // take 80 bits (20 hex chars)
+  // 2. Generate exactly 10 bytes (80 bits) of cryptographic randomness natively.
+  //    This replaces the previous uuidv4 string manipulation logic.
+  const randomBytes = crypto.randomBytes(10); // 10 bytes buffer
 
-  // 3. Convert hex random bytes to a BigInt, then encode as 16 Base32 chars
-  const randomInt = BigInt('0x' + randomBytes);
+  // 3. Convert bytes buffer directly to a BigInt, then encode as 16 Base32 chars
+  const randomInt = BigInt('0x' + randomBytes.toString('hex'));
   let randomPart = '';
   let remaining = randomInt;
   for (let i = 15; i >= 0; i--) {
