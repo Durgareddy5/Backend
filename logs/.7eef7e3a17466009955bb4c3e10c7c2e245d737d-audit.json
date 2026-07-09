@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/.7eef7e3a17466009955bb4c3e10c7c2e245d737d-audit.json",
+    "files": [
+        {
+            "date": 1782985515336,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/mongodb-2026-07-02.log",
+            "hash": "95bc36cb7c197e621fc1902c91e1ca506027da3cecce777923d66c38028d7ffb"
+        },
+        {
+            "date": 1783055571109,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/mongodb-2026-07-03.log",
+            "hash": "3526c73dc903807a6046e54c1d22ee23d37c77ea001c80c04aa1fad236022342"
+        },
+        {
+            "date": 1783179075666,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/mongodb-2026-07-04.log",
+            "hash": "7a132f7a2be386f08ddd0d5a8a3c96742339627d8437c571b5fcb76e70f069d7"
+        },
+        {
+            "date": 1783232903268,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/mongodb-2026-07-05.log",
+            "hash": "21d4d1fc416650c579cec422bdee2dbcb7d3d276fe4e125117f33f688f0e4799"
+        },
+        {
+            "date": 1783281807685,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/mongodb-2026-07-06.log",
+            "hash": "f70136b36341c03acaa55c0e55dc3aee48068ed1f145e2768f69aa5af16c286b"
+        },
+        {
+            "date": 1783364756828,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/mongodb-2026-07-07.log",
+            "hash": "39be8549eff261e446a5d6ee78f5872c6f65f7d37facc3388e2f8183410eb93e"
+        },
+        {
+            "date": 1783529139685,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/mongodb-2026-07-08.log",
+            "hash": "12464336c67210dbce01288af3dafa374a6cd7fddc391f77f9944ee826b69580"
+        },
+        {
+            "date": 1783536654866,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/mongodb-2026-07-09.log",
+            "hash": "47b41d66654ce0ffa0cea9f7c2338b81628770f5b1c6863605af92e8df8bc01d"
+        }
+    ],
+    "hashType": "sha256"
+}

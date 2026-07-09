@@ -1,0 +1,29 @@
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-09 00:20:55"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://mongo:VxgNUqgDDPMVQTABTHdyqvCRVsPJsvmH@thomas.proxy.rlwy.net:59116","service":"research-connect","timestamp":"2026-07-09 00:20:56"}
+{"category":"application","level":"info","message":"MongoDB connected successfully.","service":"research-connect","timestamp":"2026-07-09 00:20:56"}
+{"category":"application","level":"info","message":"Research Connect server running on port 5001 in development mode","service":"research-connect","timestamp":"2026-07-09 00:20:57"}
+{"category":"application","level":"info","message":"Auditing and syncing database indexes...","service":"research-connect","timestamp":"2026-07-09 00:20:57"}
+{"category":"application","level":"debug","message":"Index publication_full_text_search not found or could not be dropped: index not found with name [publication_full_text_search]","service":"research-connect","timestamp":"2026-07-09 00:21:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: User","service":"research-connect","timestamp":"2026-07-09 00:21:01"}
+{"category":"application","level":"info","message":"Initializing background Scholar import queue worker...","service":"research-connect","timestamp":"2026-07-09 00:21:05"}
+{"category":"application","level":"info","message":"Initializing background Identity Sync queue worker...","service":"research-connect","timestamp":"2026-07-09 00:21:05"}
+{"category":"application","level":"info","message":"Background workers initialized.","service":"research-connect","timestamp":"2026-07-09 00:21:05"}
+{"category":"application","level":"warn","message":"Mongoose default connection disconnected. Attempting auto-reconnect...","service":"research-connect","timestamp":"2026-07-09 00:24:27"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-09 00:24:27"}
+{"category":"application","level":"warn","message":"Mongoose default connection disconnected. Attempting auto-reconnect...","service":"research-connect","timestamp":"2026-07-09 00:24:32"}
+{"category":"application","level":"info","message":"Database connection is already in progress...","service":"research-connect","timestamp":"2026-07-09 00:24:32"}
+{"category":"application","level":"info","message":"Retrying connection in 5 seconds...","service":"research-connect","timestamp":"2026-07-09 00:24:32"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://mongo:VxgNUqgDDPMVQTABTHdyqvCRVsPJsvmH@thomas.proxy.rlwy.net:59116","service":"research-connect","timestamp":"2026-07-09 00:24:36"}
+{"category":"application","level":"info","message":"Received SIGINT. Shutting down server gracefully...","service":"research-connect","timestamp":"2026-07-09 00:25:29"}
+{"category":"application","level":"info","message":"HTTP server closed.","service":"research-connect","timestamp":"2026-07-09 00:25:29"}
+{"category":"application","level":"info","message":"Closing Mongoose connection...","service":"research-connect","timestamp":"2026-07-09 00:25:29"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-09 00:25:39"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://mongo:VxgNUqgDDPMVQTABTHdyqvCRVsPJsvmH@thomas.proxy.rlwy.net:59116","service":"research-connect","timestamp":"2026-07-09 00:25:40"}
+{"category":"application","level":"info","message":"MongoDB connected successfully.","service":"research-connect","timestamp":"2026-07-09 00:25:40"}
+{"category":"application","level":"info","message":"Research Connect server running on port 5001 in development mode","service":"research-connect","timestamp":"2026-07-09 00:25:41"}
+{"category":"application","level":"info","message":"Auditing and syncing database indexes...","service":"research-connect","timestamp":"2026-07-09 00:25:41"}
+{"category":"application","level":"info","message":"Successfully dropped publication_full_text_search to apply language_override: none","service":"research-connect","timestamp":"2026-07-09 00:25:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: User","service":"research-connect","timestamp":"2026-07-09 00:25:44"}
+{"category":"application","level":"info","message":"Initializing background Scholar import queue worker...","service":"research-connect","timestamp":"2026-07-09 00:25:49"}
+{"category":"application","level":"info","message":"Initializing background Identity Sync queue worker...","service":"research-connect","timestamp":"2026-07-09 00:25:49"}
+{"category":"application","level":"info","message":"Background workers initialized.","service":"research-connect","timestamp":"2026-07-09 00:25:49"}

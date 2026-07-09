@@ -1,0 +1,2 @@
+{"category":"auth","level":"info","message":"Security Event [LOGIN_OTP_TRIGGERED] - User: 6a47b96a8cd847c329add750 - Credentials valid. Login 2FA OTP sent. (IP: ::1, Device: Desktop)","service":"research-connect","timestamp":"2026-07-06 01:36:32"}
+{"category":"auth","level":"info","message":"Security Event [LOGIN_SUCCESS] - User: 6a47b96a8cd847c329add750 - Successful login verification via OTP. (IP: ::1, Device: Desktop)","service":"research-connect","timestamp":"2026-07-06 01:36:59"}

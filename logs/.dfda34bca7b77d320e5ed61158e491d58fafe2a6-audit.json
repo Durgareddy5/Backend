@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/.dfda34bca7b77d320e5ed61158e491d58fafe2a6-audit.json",
+    "files": [
+        {
+            "date": 1782985515336,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/auth-2026-07-02.log",
+            "hash": "549a302299f3c887fc61872955016868e00323c90128ac73f1598b214f5cb847"
+        },
+        {
+            "date": 1783046820167,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/auth-2026-07-03.log",
+            "hash": "14ce36754caeea7379cbbce39f734fde9ab6c639ab019d14c09c12cc567b78d6"
+        },
+        {
+            "date": 1783179075667,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/auth-2026-07-04.log",
+            "hash": "e1d8e0552c95d358d9d60af53fad67885eb05a5b1a96a6e2c70deffbb4daaf96"
+        },
+        {
+            "date": 1783232903269,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/auth-2026-07-05.log",
+            "hash": "5102a16bcb87e9992e0adca434892f14758aa4ca6aa2536bef30e8b83b974932"
+        },
+        {
+            "date": 1783281807694,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/auth-2026-07-06.log",
+            "hash": "6f6b6aca60183b5e36584ad6e1a6c5ef12f2d3d733ceccc6bd6bcfef4e7fe74b"
+        },
+        {
+            "date": 1783364756829,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/auth-2026-07-07.log",
+            "hash": "a4120e4e2ad99286e599e4ca55ca198b8e9019ff02164bafdc52deb13eea87d6"
+        },
+        {
+            "date": 1783529139686,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/auth-2026-07-08.log",
+            "hash": "87c92eb147a6a6b1d8d833bcd6f9728ad7a5de50dbeda6b3f2c0230d3c1cdf32"
+        },
+        {
+            "date": 1783536654867,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/auth-2026-07-09.log",
+            "hash": "b9a312a53b1b1495e1be81c45b417667f9471fea8d4ed4bf1ffb4bee294bd30b"
+        }
+    ],
+    "hashType": "sha256"
+}

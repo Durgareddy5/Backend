@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/.c0e128b0e2ab6c7ab11be450d3fc7aec4c4d261f-audit.json",
+    "files": [
+        {
+            "date": 1782985515336,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/error-2026-07-02.log",
+            "hash": "4fc32905975755ca1a1daf1e0bd3886f73923d7146a2fe91771eebe30c09854f"
+        },
+        {
+            "date": 1783017212962,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/error-2026-07-03.log",
+            "hash": "030e64f62a9587cb0421b21eef90480f6b6142540fe169a7a34a661909efd746"
+        },
+        {
+            "date": 1783179075666,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/error-2026-07-04.log",
+            "hash": "00971a214f34804df026661a2a1038d51b58a787021a8487d14a20c8b8935185"
+        },
+        {
+            "date": 1783232903268,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/error-2026-07-05.log",
+            "hash": "6e61af5cbccb051a12d21d21274de2c29978a15c8db875d4d3721e9ce8c79f52"
+        },
+        {
+            "date": 1783281807692,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/error-2026-07-06.log",
+            "hash": "bca1c76730722af0b17bd5d32fdaf40a6c470dc39dbdc2135bf665058e09fb91"
+        },
+        {
+            "date": 1783364756828,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/error-2026-07-07.log",
+            "hash": "6ab3c51df53b8bf076e30afbed2772675bb467f770176fbb96c7d2ed58a88010"
+        },
+        {
+            "date": 1783529139685,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/error-2026-07-08.log",
+            "hash": "97626c695c77e9825709d3434421567893828d2ef7cc6441e4180de9f912a936"
+        },
+        {
+            "date": 1783536654867,
+            "name": "/Users/durgaprasad/Desktop/Research.connect/backend/logs/error-2026-07-09.log",
+            "hash": "fc4d32a00ce3337f6e065c16b7c75188de7d0691da8210928285f1d7ac40140a"
+        }
+    ],
+    "hashType": "sha256"
+}

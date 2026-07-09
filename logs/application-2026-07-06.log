@@ -1,0 +1,409 @@
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:33:29"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:33:29"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:33:29"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:33:30"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:33:30"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:33:30"}
+{"category":"application","level":"info","message":"MongoDB connected successfully.","service":"research-connect","timestamp":"2026-07-06 01:33:30"}
+{"category":"application","level":"info","message":"Research Connect server running on port 5001 in development mode","service":"research-connect","timestamp":"2026-07-06 01:33:33"}
+{"category":"application","level":"info","message":"Auditing and syncing database indexes...","service":"research-connect","timestamp":"2026-07-06 01:33:33"}
+{"category":"application","level":"info","message":"Successfully dropped publication_full_text_search to apply language_override: none","service":"research-connect","timestamp":"2026-07-06 01:33:35"}
+{"category":"application","level":"info","message":"Syncing indexes for model: User","service":"research-connect","timestamp":"2026-07-06 01:33:35"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Profile","service":"research-connect","timestamp":"2026-07-06 01:33:37"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Settings","service":"research-connect","timestamp":"2026-07-06 01:33:37"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Notification","service":"research-connect","timestamp":"2026-07-06 01:33:37"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Session","service":"research-connect","timestamp":"2026-07-06 01:33:37"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ActivityLog","service":"research-connect","timestamp":"2026-07-06 01:33:37"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RefreshToken","service":"research-connect","timestamp":"2026-07-06 01:33:37"}
+{"category":"application","level":"info","message":"Syncing indexes for model: EmailOtp","service":"research-connect","timestamp":"2026-07-06 01:33:37"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SystemConfiguration","service":"research-connect","timestamp":"2026-07-06 01:33:37"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ApplicationLog","service":"research-connect","timestamp":"2026-07-06 01:33:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: GoogleScholarProfile","service":"research-connect","timestamp":"2026-07-06 01:33:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Publication","service":"research-connect","timestamp":"2026-07-06 01:33:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationAuthor","service":"research-connect","timestamp":"2026-07-06 01:33:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CoAuthor","service":"research-connect","timestamp":"2026-07-06 01:33:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CitationGraph","service":"research-connect","timestamp":"2026-07-06 01:33:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchArea","service":"research-connect","timestamp":"2026-07-06 01:33:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Keyword","service":"research-connect","timestamp":"2026-07-06 01:33:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchMetric","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Import","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ImportLog","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: DerivedAnalytics","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SyncHistory","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SecurityLog","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ProfileCompletion","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Education","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Experience","service":"research-connect","timestamp":"2026-07-06 01:33:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Skill","service":"research-connect","timestamp":"2026-07-06 01:33:40"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Patent","service":"research-connect","timestamp":"2026-07-06 01:33:40"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Book","service":"research-connect","timestamp":"2026-07-06 01:33:40"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Award","service":"research-connect","timestamp":"2026-07-06 01:33:40"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Certificate","service":"research-connect","timestamp":"2026-07-06 01:33:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SocialLink","service":"research-connect","timestamp":"2026-07-06 01:33:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ProfileAnalytics","service":"research-connect","timestamp":"2026-07-06 01:33:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Project","service":"research-connect","timestamp":"2026-07-06 01:33:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Dataset","service":"research-connect","timestamp":"2026-07-06 01:33:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Follow","service":"research-connect","timestamp":"2026-07-06 01:33:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Connection","service":"research-connect","timestamp":"2026-07-06 01:33:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ConnectionRequest","service":"research-connect","timestamp":"2026-07-06 01:33:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Feed","service":"research-connect","timestamp":"2026-07-06 01:33:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Like","service":"research-connect","timestamp":"2026-07-06 01:33:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Bookmark","service":"research-connect","timestamp":"2026-07-06 01:33:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Comment","service":"research-connect","timestamp":"2026-07-06 01:33:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Share","service":"research-connect","timestamp":"2026-07-06 01:33:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Recommendation","service":"research-connect","timestamp":"2026-07-06 01:33:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchQuestion","service":"research-connect","timestamp":"2026-07-06 01:33:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Event","service":"research-connect","timestamp":"2026-07-06 01:33:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedInteraction","service":"research-connect","timestamp":"2026-07-06 01:33:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedEvent","service":"research-connect","timestamp":"2026-07-06 01:33:44"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:33:49"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:33:49"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:33:49"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:33:50"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:33:50"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:33:50"}
+{"category":"application","level":"info","message":"MongoDB connected successfully.","service":"research-connect","timestamp":"2026-07-06 01:33:50"}
+{"category":"application","level":"info","message":"Research Connect server running on port 5001 in development mode","service":"research-connect","timestamp":"2026-07-06 01:33:52"}
+{"category":"application","level":"info","message":"Auditing and syncing database indexes...","service":"research-connect","timestamp":"2026-07-06 01:33:52"}
+{"category":"application","level":"info","message":"Successfully dropped publication_full_text_search to apply language_override: none","service":"research-connect","timestamp":"2026-07-06 01:33:53"}
+{"category":"application","level":"info","message":"Syncing indexes for model: User","service":"research-connect","timestamp":"2026-07-06 01:33:53"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Profile","service":"research-connect","timestamp":"2026-07-06 01:33:55"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Settings","service":"research-connect","timestamp":"2026-07-06 01:33:56"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Notification","service":"research-connect","timestamp":"2026-07-06 01:33:56"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Session","service":"research-connect","timestamp":"2026-07-06 01:33:56"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ActivityLog","service":"research-connect","timestamp":"2026-07-06 01:33:56"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RefreshToken","service":"research-connect","timestamp":"2026-07-06 01:33:56"}
+{"category":"application","level":"info","message":"Syncing indexes for model: EmailOtp","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SystemConfiguration","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ApplicationLog","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: GoogleScholarProfile","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Publication","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationAuthor","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CoAuthor","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CitationGraph","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchArea","service":"research-connect","timestamp":"2026-07-06 01:33:57"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Keyword","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchMetric","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Import","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ImportLog","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: DerivedAnalytics","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SyncHistory","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SecurityLog","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ProfileCompletion","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Education","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Experience","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Skill","service":"research-connect","timestamp":"2026-07-06 01:33:58"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Patent","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Book","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Award","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Certificate","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SocialLink","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ProfileAnalytics","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Project","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Dataset","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Follow","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Connection","service":"research-connect","timestamp":"2026-07-06 01:33:59"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ConnectionRequest","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Feed","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Like","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Bookmark","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Comment","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Share","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Recommendation","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchQuestion","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Event","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedInteraction","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedEvent","service":"research-connect","timestamp":"2026-07-06 01:34:00"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedRanking","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationFile","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationKeyword","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationResearchArea","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationMetric","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationAnalytic","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationView","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationDownload","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationBookmark","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationComment","service":"research-connect","timestamp":"2026-07-06 01:34:01"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationHistory","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationCitation","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Conversation","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Message","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PinnedChat","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ArchivedChat","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: MessageAttachment","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: MessageReaction","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Presence","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SocketSession","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SearchHistory","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SearchAnalytic","service":"research-connect","timestamp":"2026-07-06 01:34:02"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Upload","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Collaboration","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMember","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationInvitation","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationTask","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationFile","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationActivity","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMeeting","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMessage","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchIdentity","service":"research-connect","timestamp":"2026-07-06 01:34:03"}
+{"category":"application","level":"info","message":"Syncing indexes for model: IdentityProvider","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Syncing indexes for model: AcademicMetrics","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CoAuthorGraph","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationScore","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationProfile","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchGraph","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationHistory","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Database indexes synced successfully.","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Initializing background Scholar import queue worker...","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Initializing background Identity Sync queue worker...","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Background workers initialized.","service":"research-connect","timestamp":"2026-07-06 01:34:04"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:34:34"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:34:34"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:34:34"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:34:34"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:34:34"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:34:34"}
+{"category":"application","level":"info","message":"MongoDB connected successfully.","service":"research-connect","timestamp":"2026-07-06 01:34:34"}
+{"category":"application","level":"info","message":"Research Connect server running on port 5001 in development mode","service":"research-connect","timestamp":"2026-07-06 01:34:37"}
+{"category":"application","level":"info","message":"Auditing and syncing database indexes...","service":"research-connect","timestamp":"2026-07-06 01:34:37"}
+{"category":"application","level":"info","message":"Successfully dropped publication_full_text_search to apply language_override: none","service":"research-connect","timestamp":"2026-07-06 01:34:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: User","service":"research-connect","timestamp":"2026-07-06 01:34:38"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Profile","service":"research-connect","timestamp":"2026-07-06 01:34:39"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Settings","service":"research-connect","timestamp":"2026-07-06 01:34:40"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Notification","service":"research-connect","timestamp":"2026-07-06 01:34:40"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Session","service":"research-connect","timestamp":"2026-07-06 01:34:40"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ActivityLog","service":"research-connect","timestamp":"2026-07-06 01:34:40"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RefreshToken","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: EmailOtp","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SystemConfiguration","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ApplicationLog","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: GoogleScholarProfile","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Publication","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationAuthor","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CoAuthor","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CitationGraph","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchArea","service":"research-connect","timestamp":"2026-07-06 01:34:41"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Keyword","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchMetric","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Import","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ImportLog","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: DerivedAnalytics","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SyncHistory","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SecurityLog","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ProfileCompletion","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Education","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Experience","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Skill","service":"research-connect","timestamp":"2026-07-06 01:34:42"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Patent","service":"research-connect","timestamp":"2026-07-06 01:34:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Book","service":"research-connect","timestamp":"2026-07-06 01:34:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Award","service":"research-connect","timestamp":"2026-07-06 01:34:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Certificate","service":"research-connect","timestamp":"2026-07-06 01:34:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SocialLink","service":"research-connect","timestamp":"2026-07-06 01:34:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ProfileAnalytics","service":"research-connect","timestamp":"2026-07-06 01:34:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Project","service":"research-connect","timestamp":"2026-07-06 01:34:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Dataset","service":"research-connect","timestamp":"2026-07-06 01:34:43"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Follow","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Connection","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ConnectionRequest","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Feed","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Like","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Bookmark","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Comment","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Share","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Recommendation","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchQuestion","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Event","service":"research-connect","timestamp":"2026-07-06 01:34:44"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedInteraction","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedEvent","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedRanking","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationFile","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationKeyword","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationResearchArea","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationMetric","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationAnalytic","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationView","service":"research-connect","timestamp":"2026-07-06 01:34:45"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationDownload","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationBookmark","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationComment","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationHistory","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationCitation","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Conversation","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Message","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PinnedChat","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ArchivedChat","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: MessageAttachment","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: MessageReaction","service":"research-connect","timestamp":"2026-07-06 01:34:46"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Presence","service":"research-connect","timestamp":"2026-07-06 01:34:47"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SocketSession","service":"research-connect","timestamp":"2026-07-06 01:34:47"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SearchHistory","service":"research-connect","timestamp":"2026-07-06 01:34:47"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SearchAnalytic","service":"research-connect","timestamp":"2026-07-06 01:34:47"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Upload","service":"research-connect","timestamp":"2026-07-06 01:34:47"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Collaboration","service":"research-connect","timestamp":"2026-07-06 01:34:47"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMember","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationInvitation","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationTask","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationFile","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationActivity","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMeeting","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMessage","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchIdentity","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: IdentityProvider","service":"research-connect","timestamp":"2026-07-06 01:34:48"}
+{"category":"application","level":"info","message":"Syncing indexes for model: AcademicMetrics","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CoAuthorGraph","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationScore","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationProfile","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchGraph","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationHistory","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Database indexes synced successfully.","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Initializing background Scholar import queue worker...","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Initializing background Identity Sync queue worker...","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Background workers initialized.","service":"research-connect","timestamp":"2026-07-06 01:34:49"}
+{"category":"application","level":"info","message":"Initializing MongoDB connection...","service":"research-connect","timestamp":"2026-07-06 01:35:21"}
+{"category":"application","level":"info","message":"Mongoose default connection open to mongodb://researchconnectdb:researchconnectdb@ac-qpuswwn-shard-00-00.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-01.0x5pbm5.mongodb.net:27017,ac-qpuswwn-shard-00-02.0x5pbm5.mongodb.net:27017/research_connect?ssl=true&replicaSet=atlas-t9ah7c-shard-0&authSource=admin","service":"research-connect","timestamp":"2026-07-06 01:35:22"}
+{"category":"application","level":"info","message":"MongoDB connected successfully.","service":"research-connect","timestamp":"2026-07-06 01:35:22"}
+{"category":"application","level":"info","message":"Research Connect server running on port 5001 in development mode","service":"research-connect","timestamp":"2026-07-06 01:35:22"}
+{"category":"application","level":"info","message":"Auditing and syncing database indexes...","service":"research-connect","timestamp":"2026-07-06 01:35:22"}
+{"category":"application","level":"info","message":"Successfully dropped publication_full_text_search to apply language_override: none","service":"research-connect","timestamp":"2026-07-06 01:35:23"}
+{"category":"application","level":"info","message":"Syncing indexes for model: User","service":"research-connect","timestamp":"2026-07-06 01:35:23"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Profile","service":"research-connect","timestamp":"2026-07-06 01:35:25"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Settings","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Notification","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Session","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ActivityLog","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RefreshToken","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: EmailOtp","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SystemConfiguration","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ApplicationLog","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: GoogleScholarProfile","service":"research-connect","timestamp":"2026-07-06 01:35:26"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Publication","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationAuthor","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CoAuthor","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CitationGraph","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchArea","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Keyword","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchMetric","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Import","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ImportLog","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: DerivedAnalytics","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SyncHistory","service":"research-connect","timestamp":"2026-07-06 01:35:27"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SecurityLog","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ProfileCompletion","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Education","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Experience","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Skill","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Patent","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Book","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Award","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Certificate","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SocialLink","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ProfileAnalytics","service":"research-connect","timestamp":"2026-07-06 01:35:28"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Project","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Dataset","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Follow","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Connection","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ConnectionRequest","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Feed","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Like","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Bookmark","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Comment","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Share","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Recommendation","service":"research-connect","timestamp":"2026-07-06 01:35:29"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchQuestion","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Event","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedInteraction","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedEvent","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: FeedRanking","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationFile","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationKeyword","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationResearchArea","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationMetric","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationAnalytic","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationView","service":"research-connect","timestamp":"2026-07-06 01:35:30"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationDownload","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationBookmark","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationComment","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationHistory","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PublicationCitation","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Conversation","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Message","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: PinnedChat","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ArchivedChat","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: MessageAttachment","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: MessageReaction","service":"research-connect","timestamp":"2026-07-06 01:35:31"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Presence","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SocketSession","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SearchHistory","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: SearchAnalytic","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Upload","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: Collaboration","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMember","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationInvitation","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationTask","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationFile","service":"research-connect","timestamp":"2026-07-06 01:35:32"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationActivity","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMeeting","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CollaborationMessage","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchIdentity","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: IdentityProvider","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: AcademicMetrics","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: CoAuthorGraph","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationScore","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationProfile","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: ResearchGraph","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Syncing indexes for model: RecommendationHistory","service":"research-connect","timestamp":"2026-07-06 01:35:33"}
+{"category":"application","level":"info","message":"Database indexes synced successfully.","service":"research-connect","timestamp":"2026-07-06 01:35:34"}
+{"category":"application","level":"info","message":"Initializing background Scholar import queue worker...","service":"research-connect","timestamp":"2026-07-06 01:35:34"}
+{"category":"application","level":"info","message":"Initializing background Identity Sync queue worker...","service":"research-connect","timestamp":"2026-07-06 01:35:34"}
+{"category":"application","level":"info","message":"Background workers initialized.","service":"research-connect","timestamp":"2026-07-06 01:35:34"}
+{"category":"application","level":"info","message":"Email sent successfully to duurgaaprasadreddy@gmail.com. Message ID: <0e41ba1c-7a30-18e3-7fa6-8ad0ebd0b570@gmail.com>","service":"research-connect","timestamp":"2026-07-06 01:36:32"}
+{"category":"application","level":"info","message":"af79bc29-e3f2-4779-bd2c-0716c775706d ::1 POST /api/v1/auth/login 200 157 - 11220.172 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:36:32"}
+{"category":"application","level":"info","message":"e69965ae-4ca0-4d97-b4f3-1caacb5c244f ::1 POST /api/v1/auth/verify-login-otp 200 - - 3629.005 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:36:59"}
+{"category":"application","level":"info","message":"c6fc85d8-3837-4d81-9c8f-017f18e484e3 ::1 GET /api/v1/connections/requests/received 304 - - 184.331 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:03"}
+{"category":"application","level":"info","message":"da8bdc90-6c9e-4ef9-aa23-c2e314eb791a ::1 GET /api/v1/scholar/profile 304 - - 212.681 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:03"}
+{"category":"application","level":"info","message":"57428ca0-7269-4c49-9baa-c67b794eb85d ::1 GET /api/v1/notifications/unread-count 200 94 - 626.808 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:03"}
+{"category":"application","level":"info","message":"5868de3f-1bac-4558-ba71-9786da00e688 ::1 GET /api/v1/events?page=1&limit=3 304 - - 443.491 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:03"}
+{"category":"application","level":"info","message":"f7634b20-0991-4a21-ac2e-dc16c08aad89 ::1 GET /api/v1/feed?page=1&limit=10 304 - - 559.609 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:04"}
+{"category":"application","level":"info","message":"ed9033de-c886-4ec6-8d92-c96a94ca1cb7 ::1 GET /api/v1/scholar/citations 304 - - 165.165 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:04"}
+{"category":"application","level":"info","message":"97ee214c-0abb-46d8-98af-6bfc4782e1ca ::1 GET /api/v1/scholar/publications?page=1&limit=5 304 - - 250.124 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:04"}
+{"category":"application","level":"info","message":"8a6ed114-93b0-4084-aa9d-816d7f8a8788 ::1 GET /api/v1/scholar/coauthors 200 962 - 518.112 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:04"}
+{"category":"application","level":"info","message":"fd2b7293-266f-48e5-afa7-1176ed4d1dd8 ::1 GET /api/v1/recommendations/researchers?limit=5 304 - - 1101.378 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:04"}
+{"category":"application","level":"info","message":"017a1f37-9861-49e0-9b42-42b2dcc2e52a ::1 GET /api/v1/feed?page=1&limit=10 304 - - 548.182 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:04"}
+{"category":"application","level":"info","message":"7abb7299-ed87-49f0-a81c-3b4d27918b93 ::1 GET /api/v1/notifications?limit=20 200 - - 361.560 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:10"}
+{"category":"application","level":"info","message":"f1221b8e-1244-4b6f-ad39-3e411bdfcfe8 ::1 GET /api/v1/profile/me 200 - - 238.721 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:14"}
+{"category":"application","level":"info","message":"40149bb3-7ae8-4119-af15-41503259d5ab ::1 GET /api/v1/notifications?limit=15 200 - - 303.970 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:14"}
+{"category":"application","level":"info","message":"9946a006-602c-4d8c-8471-a26022266bd3 ::1 GET /api/v1/notifications?limit=15&isRead=false 304 - - 309.303 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:24"}
+{"category":"application","level":"info","message":"a2124239-db1a-4bc0-a5c2-f0d408aa83b9 ::1 GET /api/v1/notifications?limit=15&type=mention 200 143 - 307.561 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:25"}
+{"category":"application","level":"info","message":"581975fb-0843-4941-9d7c-39eea452e6d6 ::1 GET /api/v1/notifications?limit=15&type=connection 200 - - 280.805 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:25"}
+{"category":"application","level":"info","message":"1dd0bbf8-479b-46a1-b791-939409d1406e ::1 GET /api/v1/notifications?limit=15&type=publication 200 143 - 265.925 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:26"}
+{"category":"application","level":"info","message":"33a0ce3d-632f-4afb-896c-42ea4c754989 ::1 GET /api/v1/notifications?limit=15&type=system 200 927 - 286.224 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:32"}
+{"category":"application","level":"info","message":"20fdb87c-042e-4d10-b0b1-1d7c10dfbe44 ::1 GET /api/v1/feed?page=1&limit=10 304 - - 195.849 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:35"}
+{"category":"application","level":"info","message":"609fd9d1-5b63-476e-a9ff-df07d62d9033 ::1 GET /api/v1/feed?page=2&limit=10 304 - - 306.958 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:35"}
+{"category":"application","level":"info","message":"c96fb5ab-ba55-4059-a6b4-9bc7d56d4d1d ::1 GET /api/v1/feed?page=1&limit=10 304 - - 151.722 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:35"}
+{"category":"application","level":"info","message":"51a2cdf7-9c63-4d23-9b22-f9d77c2e08d6 ::1 POST /api/v1/publication/like 500 - - 198.501 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:43"}
+{"category":"application","level":"info","message":"1e3607e4-e4f8-49bb-8939-44f9f7580150 ::1 GET /api/v1/profile/durga-prasad-rc_NBRIYL 200 - - 49.412 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:54"}
+{"category":"application","level":"info","message":"12185a67-a7fc-4f88-8a32-8125e0e83601 ::1 GET /api/v1/publications/profile/durga-prasad-rc_NBRIYL/publications?page=1&limit=10&sort=-createdAt 304 - - 454.135 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:55"}
+{"category":"application","level":"info","message":"4504b910-3239-4fc8-8185-e8b2ee7ce395 ::1 GET /api/v1/publications/profile/durga-prasad-rc_NBRIYL/publications?page=1&limit=10&sort=-createdAt 304 - - 217.303 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:55"}
+{"category":"application","level":"info","message":"b067ea86-a03d-4b07-a264-729628f380df ::1 GET /api/v1/feed?page=1&limit=10 304 - - 158.743 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:58"}
+{"category":"application","level":"info","message":"60c3d4f8-5c79-4b3e-8262-8ecd0620191b ::1 GET /api/v1/feed?page=1&limit=10 304 - - 170.437 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:58"}
+{"category":"application","level":"info","message":"2d00606a-881a-4fa3-921a-afe9b804820f ::1 GET /api/v1/publications/profile/durga-prasad-rc_NBRIYL/publications?page=1&limit=10&sort=-createdAt 304 - - 227.665 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:59"}
+{"category":"application","level":"info","message":"e8389197-c077-4bc2-b731-7e745b617776 ::1 GET /api/v1/publications/profile/durga-prasad-rc_NBRIYL/publications?page=1&limit=10&sort=-createdAt 304 - - 187.988 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:37:59"}
+{"category":"application","level":"info","message":"171a30e8-32d4-4afd-8432-885490daf00f ::1 GET /api/v1/feed?page=1&limit=10 304 - - 178.340 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:38:55"}
+{"category":"application","level":"info","message":"e4b62d64-63cb-4a8c-9efd-e2e88d10b92c ::1 GET /api/v1/feed?page=2&limit=10 304 - - 169.657 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:38:55"}
+{"category":"application","level":"info","message":"ed15dc4c-4f11-4484-98b6-cd1ac41062e2 ::1 GET /api/v1/feed?page=1&limit=10 304 - - 168.698 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:38:55"}
+{"category":"application","level":"info","message":"ec100cd4-2805-4297-bc95-424eee7a9a96 ::1 GET /api/v1/messages/conversations 400 873 - 304.237 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:38:59"}
+{"category":"application","level":"info","message":"92c874ec-cd5b-4978-8df9-e028ab03aa0e ::1 GET /api/v1/suggested-researchers 304 - - 478.044 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:00"}
+{"category":"application","level":"info","message":"701accf8-fcdd-41f0-b514-0e04280f5e5d ::1 GET /api/v1/suggested-researchers 304 - - 163.633 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:11"}
+{"category":"application","level":"info","message":"aafe2434-d60a-48a6-ba22-85d42dc0419a ::1 GET /api/v1/messages/conversations 400 873 - 293.404 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:11"}
+{"category":"application","level":"info","message":"49b05bee-4e0f-4b77-a7cb-705b1a8b1de0 ::1 GET /api/v1/scholar/profile 304 - - 263.307 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"a6429aea-03b0-47a9-af7e-8d26fde1d5b5 ::1 GET /api/v1/connections/requests/received 304 - - 272.128 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"143c8b37-db3f-46a9-a210-d47b7f142ad9 ::1 GET /api/v1/notifications/unread-count 304 - - 372.245 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"4dd5891c-f5df-469b-abee-2dfe696fb75b ::1 GET /api/v1/events?page=1&limit=3 304 - - 357.461 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"0eaa1cca-85eb-452d-84ec-7771941663df ::1 GET /api/v1/scholar/coauthors 304 - - 132.419 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"0c87f737-160a-4e06-9b9a-c9f3c6dfd2bb ::1 GET /api/v1/scholar/publications?page=1&limit=5 304 - - 136.426 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"8656e100-bcb8-4e4c-a0b1-931968cca693 ::1 GET /api/v1/feed?page=1&limit=10 304 - - 478.765 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"546213e3-6068-4062-bd68-11d2c09a5bea ::1 GET /api/v1/scholar/citations 304 - - 117.239 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"4e767709-1a38-4bdb-873f-6aa77be30ca3 ::1 GET /api/v1/feed?page=1&limit=10 304 - - 147.319 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"0697b22c-b702-4a03-b19c-b5c6d6770b37 ::1 GET /api/v1/recommendations/researchers?limit=5 304 - - 686.243 ms","service":"research-connect","tags":["api-request"],"timestamp":"2026-07-06 01:39:36"}
+{"category":"application","level":"info","message":"Received SIGINT. Shutting down server gracefully...","service":"research-connect","timestamp":"2026-07-06 01:39:49"}
