@@ -4,6 +4,7 @@ const cookieParser = require("cookie-parser");
 const cors = require('cors');
 const fs = require("fs");
 const path = require("path");
+const { connectDB } = require('./config/database/connection');
 
 // Import Custom Middlewares
 const requestIdMiddleware = require("./common/middlewares/requestId.middleware");
