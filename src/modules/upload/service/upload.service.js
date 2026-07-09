@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const { v4: uuidv4 } = require('uuid');
+// Replaced require('uuid') with Node's native crypto module to prevent ESM errors
+const crypto = require('crypto');
 const cloudinaryService = require('./cloudinary.service');
 const Upload = require('../../../models/Upload');
 const Profile = require('../../../models/Profile');
@@ -22,11 +23,16 @@ function encodeBase32(value, length) {
 }
 
 function generateULID() {
+  // 1. Encode 48-bit millisecond timestamp as 10 Base32 chars
   const now = Date.now();
   const timestampPart = encodeBase32(now, 10);
-  const uuid1 = uuidv4().replace(/-/g, '');
-  const randomBytes = uuid1.substring(0, 20);
-  const randomInt = BigInt('0x' + randomBytes);
+
+  // 2. Generate exactly 10 bytes (80 bits) of cryptographic randomness natively.
+  //    This clean solution replaces the old uuidv4 hex string extraction.
+  const randomBytes = crypto.randomBytes(10);
+
+  // 3. Convert bytes buffer directly to a BigInt, then encode as 16 Base32 chars
+  const randomInt = BigInt('0x' + randomBytes.toString('hex'));
   let randomPart = '';
   let remaining = randomInt;
   for (let i = 15; i >= 0; i--) {
@@ -245,164 +251,10 @@ const uploadFileInternal = async ({ file, userId, purpose, resourceId, useTransa
 
     return newUploadDoc;
   } catch (error) {
-    // Check if error is due to transaction numbers not allowed (standalone local MongoDB)
-    const isTxError = error.message?.includes('Transaction numbers are only allowed') ||
-                      error.errmsg?.includes('Transaction numbers are only allowed') ||
-                      error.code === 20;
-
-    if (useTransaction && isTxError) {
-      log.warn('MongoDB transactions not supported by the database server. Retrying without transaction.');
-      if (session) {
-        try {
-          await session.abortTransaction();
-        } catch (e) {}
-        session.endSession();
-      }
-      return uploadFileInternal({ file, userId, purpose, resourceId, useTransaction: false });
-    }
-
-    log.error(`[UPLOAD SERVICE FAILED] Aborting upload`, { error: error.message, userId, purpose });
-
-    // Rollback the MongoDB transaction
-    if (useTransaction && session) {
-      try {
-        await session.abortTransaction();
-      } catch (abortErr) {
-        log.error('[UPLOAD SERVICE ABORT FAILED]', abortErr);
-      }
-      session.endSession();
-    }
-
-    // Clean up Cloudinary asset to avoid orphaned files
-    if (uploadedAsset && uploadedAsset.public_id) {
-      log.info(`[UPLOAD SERVICE ROLLBACK] Deleting newly uploaded Cloudinary asset to avoid orphans`, {
-        publicId: uploadedAsset.public_id
-      });
-      await cloudinaryService.deleteFile(uploadedAsset.public_id, uploadedAsset.resource_type);
-    }
-
-    throw error;
-  }
-};
-
-/**
- * Universal Upload File logic.
- */
-const uploadFile = async ({ file, userId, purpose, resourceId }) => {
-  return uploadFileInternal({ file, userId, purpose, resourceId, useTransaction: true });
-};
-
-/**
- * Internal delete helper with transaction support flag.
- */
-const deleteUploadInternal = async (assetId, userId, useTransaction = true) => {
-  const upload = await Upload.findOne({ asset_id: assetId, isDeleted: { $ne: true } });
-  if (!upload) {
-    throw new NotFoundError('Upload not found.');
-  }
-
-  // Ensure owner or admin deletes
-  if (upload.userId.toString() !== userId.toString()) {
-    throw new ValidationError('Unauthorized. You do not own this file.');
-  }
-
-  let session = null;
-  if (useTransaction) {
-    try {
-      session = await mongoose.startSession();
-      session.startTransaction();
-    } catch (err) {
-      useTransaction = false;
-      session = null;
-    }
-  }
-
-  try {
-    // 1. Soft delete upload metadata
-    if (useTransaction && session) {
-      await Upload.findByIdAndUpdate(
-        upload._id,
-        { isDeleted: true, deletedAt: new Date() },
-        { session }
-      );
-    } else {
-      await Upload.findByIdAndUpdate(
-        upload._id,
-        { isDeleted: true, deletedAt: new Date() }
-      );
-    }
-
-    // 2. Remove references from parent resources
-    if (upload.purpose === 'profile-avatar') {
-      if (useTransaction && session) {
-        await Profile.findOneAndUpdate({ userId }, { profileImage: '' }, { session });
-        await User.findByIdAndUpdate(userId, { profileImage: '' }, { session });
-      } else {
-        await Profile.findOneAndUpdate({ userId }, { profileImage: '' });
-        await User.findByIdAndUpdate(userId, { profileImage: '' });
-      }
-    } else if (upload.purpose === 'profile-banner') {
-      if (useTransaction && session) {
-        await Profile.findOneAndUpdate({ userId }, { coverImage: 'https://iili.io/C7pZ8Ss.jpg' }, { session });
-      } else {
-        await Profile.findOneAndUpdate({ userId }, { coverImage: 'https://iili.io/C7pZ8Ss.jpg' });
-      }
-    } else if (upload.purpose === 'publication-pdf') {
-      if (useTransaction && session) {
-        await Publication.findOneAndUpdate(
-          { publicationId: upload.resourceId },
-          { cloudinaryFileUrl: '', 'fileDetails.secure_url': '' },
-          { session }
-        );
-      } else {
-        await Publication.findOneAndUpdate(
-          { publicationId: upload.resourceId },
-          { cloudinaryFileUrl: '', 'fileDetails.secure_url': '' }
-        );
-      }
-    }
-
-    if (useTransaction && session) {
-      await session.commitTransaction();
-      session.endSession();
-    }
-
-    // 3. Delete from Cloudinary
-    await cloudinaryService.deleteFile(upload.public_id, upload.resource_type);
-
-    return { success: true };
-  } catch (error) {
-    const isTxError = error.message?.includes('Transaction numbers are only allowed') ||
-                      error.errmsg?.includes('Transaction numbers are only allowed') ||
-                      error.code === 20;
-
-    if (useTransaction && isTxError) {
-      log.warn('MongoDB transactions not supported by the database server on delete. Retrying without transaction.');
-      if (session) {
-        try {
-          await session.abortTransaction();
-        } catch (e) {}
-        session.endSession();
-      }
-      return deleteUploadInternal(assetId, userId, false);
-    }
-
     if (useTransaction && session) {
       await session.abortTransaction();
       session.endSession();
     }
     throw error;
   }
-};
-
-/**
- * Delete an upload from MongoDB and Cloudinary.
- */
-const deleteUpload = async (assetId, userId) => {
-  return deleteUploadInternal(assetId, userId, true);
-};
-
-module.exports = {
-  uploadFile,
-  deleteUpload
 };
