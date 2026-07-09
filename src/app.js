@@ -35,6 +35,7 @@ const identityRoutes = require("./modules/identity/routes/identity.routes");
 const recommendationsModule = require("./modules/recommendations");
 
 const app = express();
+app.set('trust proxy', 1);
 
 // Disable X-Powered-By
 app.disable("x-powered-by");
