@@ -20,16 +20,19 @@ const consoleFormat = winston.format.combine(
 const logDirectory = path.join(process.cwd(), 'logs');
 
 const createCategoryLogger = (categoryName) => {
-  const isProduction = process.env.NODE_ENV === 'production';
-  return winston.createLogger({
-    level: isProduction ? 'info' : 'debug',
-    format: logFormat,
-    defaultMeta: { service: 'research-connect', category: categoryName },
-    transports: [
-      new winston.transports.Console({
-        format: consoleFormat,
-        level: process.env.NODE_ENV === 'production' ? 'info' : 'debug'
-      }),
+  const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL;
+  
+  // Base configuration: Always output to Console (Vercel catches this natively)
+  const transports = [
+    new winston.transports.Console({
+      format: consoleFormat,
+      level: isProduction ? 'info' : 'debug'
+    })
+  ];
+
+  // ONLY attach file transports if NOT running in production/serverless environments
+  if (!isProduction) {
+    transports.push(
       new winston.transports.DailyRotateFile({
         filename: path.join(logDirectory, `${categoryName}-%DATE%.log`),
         datePattern: 'YYYY-MM-DD',
@@ -37,9 +40,12 @@ const createCategoryLogger = (categoryName) => {
         maxSize: '20m',
         maxFiles: '14d',
         format: logFormat
-      }),
-      // Re-route errors from any category to error file as well
-      ...(categoryName !== 'error' ? [
+      })
+    );
+
+    // Re-route errors from any category to error file as well
+    if (categoryName !== 'error') {
+      transports.push(
         new winston.transports.DailyRotateFile({
           filename: path.join(logDirectory, 'error-%DATE%.log'),
           datePattern: 'YYYY-MM-DD',
@@ -49,8 +55,15 @@ const createCategoryLogger = (categoryName) => {
           level: 'error',
           format: logFormat
         })
-      ] : [])
-    ]
+      );
+    }
+  }
+
+  return winston.createLogger({
+    level: isProduction ? 'info' : 'debug',
+    format: logFormat,
+    defaultMeta: { service: 'research-connect', category: categoryName },
+    transports: transports
   });
 };
 
